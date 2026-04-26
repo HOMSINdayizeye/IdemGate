@@ -1,0 +1,22 @@
+{
+  "name": "idempotency-gateway",
+  "version": "1.0.0",
+  "description": "A payment idempotency layer for FinSafe Transactions Ltd.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --testEnvironment=node --forceExit"
+  },
+  "keywords": ["idempotency", "payments", "fintech", "api"],
+  "author": "HOMSINdayizeye",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "nodemon": "^3.0.2"
+  }
+}
