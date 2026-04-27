@@ -2,7 +2,7 @@
 
 A payment idempotency layer built with **Python (FastAPI)** that guarantees every payment is processed **exactly once**, no matter how many times a client retries the same request.
 
-## Table of Contents
+##  Documents available in this readme.md
 
 - [Architecture Diagram](#architecture-diagram)
 - [Setup Instructions](#setup-instructions)
@@ -52,12 +52,9 @@ sequenceDiagram
         G-->>C: 201 Created
     end
 ```
-
----
-
-### Flowchart
-
-```mermaid
+===========================================
+## Flowchart
+===========================================
 flowchart TD
     A([Client Request]) --> B{Idempotency-Key\nheader present?}
     B -- No --> C[400 Bad Request]
@@ -133,8 +130,6 @@ python run.py
 ```
 
 Server will be running at `http://localhost:8000`
-
-You can also explore the auto-generated API docs at `http://localhost:8000/docs`
 
 ---
 
