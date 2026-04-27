@@ -2,8 +2,6 @@
 
 A payment idempotency layer built with **Python (FastAPI)** that guarantees every payment is processed **exactly once**, no matter how many times a client retries the same request.
 
----
-
 ## Table of Contents
 
 - [Architecture Diagram](#architecture-diagram)
@@ -13,15 +11,12 @@ A payment idempotency layer built with **Python (FastAPI)** that guarantees ever
 - [Developer's Choice](#developers-choice-24-hour-ttl-expiry)
 - [Running Tests](#running-tests)
 
----
-
 ## Architecture Diagram
 
 ### Sequence Diagram
 
 The diagram below shows the full request lifecycle through the gateway.
 
-```mermaid
 sequenceDiagram
     participant C as Client
     participant G as Idempotency Gateway
@@ -97,7 +92,7 @@ flowchart TD
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/HOMSINdayizeye/IdemGate.git
 cd backend/Idempotency-gateway
 ```
 
